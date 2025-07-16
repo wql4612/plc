@@ -1,0 +1,71 @@
+Function main (returns int)
+Parameters []
+Body
+  Block
+    Decl(i)
+      IntLit(0)
+    Decl(sum)
+      IntLit(0)
+    While
+      Condition
+        Binop
+          Operator <
+          Left
+            Var(i)
+          Right
+            IntLit(10)
+      Body
+        Block
+          If
+            Condition
+              Binop
+                Operator ==
+                Left
+                  Binop
+                    Operator %
+                    Left
+                      Var(i)
+                    Right
+                      IntLit(2)
+                Right
+                  IntLit(0)
+            Then
+              Block
+                Assign(sum)
+                  Binop
+                    Operator +
+                    Left
+                      Var(sum)
+                    Right
+                      Var(i)
+            Else
+              Block
+                Assign(i)
+                  Binop
+                    Operator +
+                    Left
+                      Var(i)
+                    Right
+                      IntLit(1)
+                Continue
+          If
+            Condition
+              Binop
+                Operator >
+                Left
+                  Var(sum)
+                Right
+                  IntLit(20)
+            Then
+              Block
+                Break
+          Assign(i)
+            Binop
+              Operator +
+              Left
+                Var(i)
+              Right
+                IntLit(1)
+    Return
+      Var(sum)
+

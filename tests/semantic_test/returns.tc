@@ -1,0 +1,15 @@
+int missing_return(int x) {
+
+    if (x > 0) {
+        return 1;
+    }
+
+}
+
+void invalid_return() {
+    return 5; 
+}
+
+int main() {
+    return 0;
+}

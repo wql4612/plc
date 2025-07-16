@@ -1,0 +1,46 @@
+Function add (returns int)
+Parameters [x; y]
+Body
+  Block
+    Return
+      Binop
+        Operator +
+        Left
+          Var(x)
+        Right
+          Var(y)
+
+Function print_sum (returns void)
+Parameters [a; b]
+Body
+  Block
+    Decl(result)
+      Call(add)
+        Arg[0]
+          Var(a)
+        Arg[1]
+          Var(b)
+
+Function main (returns int)
+Parameters []
+Body
+  Block
+    Decl(x)
+      IntLit(5)
+    Decl(y)
+      IntLit(7)
+    Decl(sum)
+      Call(add)
+        Arg[0]
+          Var(x)
+        Arg[1]
+          Var(y)
+    ExprStmt
+      Call(print_sum)
+        Arg[0]
+          Var(x)
+        Arg[1]
+          Var(y)
+    Return
+      Var(sum)
+
