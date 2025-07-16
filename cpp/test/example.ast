@@ -1,0 +1,28 @@
+Function main (returns int)
+Parameters []
+Body
+  Block
+    Decl(a)
+      Binop
+        Operator +
+        Left
+          Binop
+            Operator +
+            Left
+              IntLit(10)
+            Right
+              IntLit(1)
+        Right
+          Binop
+            Operator +
+            Left
+              IntLit(5)
+            Right
+              IntLit(6)
+    Return
+      Binop
+        Operator *
+        Left
+          Var(a)
+        Right
+          IntLit(5)

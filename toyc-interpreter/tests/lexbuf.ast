@@ -1,0 +1,7 @@
+Function main (returns int)
+Parameters []
+Body
+  Block
+    Return
+      IntLit(0)
+

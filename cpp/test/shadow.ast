@@ -1,0 +1,13 @@
+Function main (returns int)
+Parameters []
+Body
+  Block
+    Decl(x)
+      IntLit(10)
+    Block
+      Decl(x)
+        IntLit(20)
+      Assign(x)
+        IntLit(30)
+    Return
+      Var(x)

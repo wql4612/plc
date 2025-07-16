@@ -1,0 +1,62 @@
+Function fibonacci (returns int)
+Parameters [n]
+Body
+  Block
+    If:
+      Condition
+        Binop
+          Operator <=
+          Left
+            Var(n)
+          Right
+            IntLit(0)
+      Then
+        Block
+          Return
+            IntLit(0)
+    If:
+      Condition
+        Binop
+          Operator ==
+          Left
+            Var(n)
+          Right
+            IntLit(1)
+      Then
+        Block
+          Return
+            IntLit(1)
+    Return
+      Binop
+        Operator +
+        Left
+          Call(fibonacci)
+            Arg[0]
+              Binop
+                Operator -
+                Left
+                  Var(n)
+                Right
+                  IntLit(1)
+        Right
+          Call(fibonacci)
+            Arg[0]
+              Binop
+                Operator -
+                Left
+                  Var(n)
+                Right
+                  IntLit(2)
+
+Function main (returns int)
+Parameters []
+Body
+  Block
+    Decl(a)
+      IntLit(0)
+    Assign(a)
+      Call(fibonacci)
+        Arg[0]
+          IntLit(1)
+    Return
+      Var(a)

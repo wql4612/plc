@@ -1,0 +1,19 @@
+Function main (returns int)
+Parameters []
+Body
+  Block
+    Assign(x)
+      IntLit(10)
+    Decl(zero)
+      IntLit(0)
+    Decl(result)
+      Binop
+        Operator /
+        Left
+          IntLit(10)
+        Right
+          Var(zero)
+    Break
+    Return
+      IntLit(0)
+

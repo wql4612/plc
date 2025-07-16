@@ -1,0 +1,8 @@
+int returnOne(){
+    return 1;
+}
+int main(){
+    int a = 0;
+    a = returnOne() +   returnOne();
+    return a;
+}

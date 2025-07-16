@@ -1,0 +1,26 @@
+// 控制流语句测试
+int main() {
+    int i = 0;
+    int sum = 0;
+    
+    // while循环
+    while (i < 10) {
+        // if-else条件分支
+        if (i % 2 == 0) {
+            sum = sum + i;
+        } else {
+            // continue语句
+            i = i + 1;
+            continue;
+        }
+        
+        // break语句
+        if (sum > 20) {
+            break;
+        }
+        
+        i = i + 1;
+    }
+    
+    return sum;
+}

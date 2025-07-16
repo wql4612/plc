@@ -1,0 +1,4 @@
+(executable
+ (name main)
+ (libraries toyc_lib)
+ (flags :standard -w -33 -w -34))
