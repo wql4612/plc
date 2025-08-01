@@ -1,0 +1,73 @@
+Function main (returns int)
+Parameters []
+Body
+  Block
+    Decl(a)
+      IntLit(10)
+    Decl(b)
+      IntLit(-5)
+    Decl(c)
+      Binop
+        Operator +
+        Left
+          Var(a)
+        Right
+          Binop
+            Operator *
+            Left
+              Var(b)
+            Right
+              IntLit(2)
+    If
+      Condition
+        Binop
+          Operator &&
+          Left
+            Binop
+              Operator >
+              Left
+                Var(c)
+              Right
+                IntLit(0)
+          Right
+            Binop
+              Operator <
+              Left
+                Var(a)
+              Right
+                IntLit(20)
+      Then
+        Block
+          Assign(c)
+            Binop
+              Operator %
+              Left
+                Var(c)
+              Right
+                IntLit(3)
+    Decl(d)
+      Binop
+        Operator ||
+        Left
+          Unop(!)
+            Binop
+              Operator ==
+              Left
+                Var(a)
+              Right
+                Var(b)
+        Right
+          Binop
+            Operator !=
+            Left
+              Var(b)
+            Right
+              IntLit(0)
+    Return
+      Binop
+        Operator +
+        Left
+          Var(c)
+        Right
+          Var(d)
+

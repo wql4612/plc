@@ -1,0 +1,23 @@
+// 函数定义和调用测试
+int add(int x, int y) {
+    return x + y;
+}
+
+void print_sum(int a, int b) {
+    // 函数调用
+    int result = add(a, b);
+    // void函数无返回值
+}
+
+int main() {
+    int x = 5;
+    int y = 7;
+    
+    // 函数调用
+    int sum = add(x, y);
+    print_sum(x, y);
+    
+    return sum;
+}
+
+

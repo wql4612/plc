@@ -1,0 +1,8 @@
+(library
+ (name toyc_lib)
+ (modules ast lexer parser))
+
+(ocamllex lexer)
+
+(menhir
+ (modules parser))

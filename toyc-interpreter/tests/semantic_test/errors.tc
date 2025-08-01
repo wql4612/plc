@@ -1,0 +1,14 @@
+// 语义错误测试
+int main() {
+    // 使用未声明的变量 - 应该报错
+    x = 10;
+    
+    // 除数为零 - 应该报错
+    int zero = 0;
+    int result = 10 / zero;
+    
+    // break不在循环内 - 应该报错
+    break;
+    
+    return 0;
+}

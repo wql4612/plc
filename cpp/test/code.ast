@@ -1,0 +1,34 @@
+Function add (returns int)
+Parameters [x; y]
+Body
+  Block
+    Return
+      Binop
+        Operator +
+        Left
+          Var(x)
+        Right
+          Var(y)
+
+Function main (returns int)
+Parameters []
+Body
+  Block
+    Decl(a)
+      Call(add)
+        Arg[0]
+          Binop
+            Operator +
+            Left
+              IntLit(1)
+            Right
+              IntLit(2)
+        Arg[1]
+          Binop
+            Operator *
+            Left
+              IntLit(3)
+            Right
+              IntLit(4)
+    Return
+      Var(a)
